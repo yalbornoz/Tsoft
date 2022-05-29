@@ -10,6 +10,6 @@ pipeline {
 }
 stage('Test') {
                  steps {
-                    input('Comenzamos la prueba?')
+                    echo 'Comenzamos la prueba?'
                  }
                  }
