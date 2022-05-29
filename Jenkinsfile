@@ -8,3 +8,8 @@ pipeline {
                  }
          }
 }
+stage('Test') {
+                 steps {
+                    input('Comenzamos la prueba?')
+                 }
+                 }
