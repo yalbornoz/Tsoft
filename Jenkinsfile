@@ -7,10 +7,12 @@ pipeline {
                  }
                  }
          }
-}
 
          stages {
-                  new File('/C:\Program Files\Jenkins\tsfot.txt').withWriter('UTF-8') { writer ->
+                  stage('Escriibir') {
+                           steps {         
+                         new File('Program.Files.Jenkins.tsfot.txt').withWriter('UTF-8') 
+                         { writer
                    try {
                             writer << 'hello world\n'
                             } finally {
