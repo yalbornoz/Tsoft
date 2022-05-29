@@ -1,10 +1,11 @@
 // This shows a simple example of how to archive the build output artifacts.
 node {
-    stage "Create build output"
+    stage "build"
+     steps {
+                     echo 'Hola, estoy construyendo'
+                 }
     
-      echo 'Hola, estoy construyendo'
-    
-    // Write an useful file, which is needed to be archived.
+  stage "build output"
     writeFile file: "output/usefulfile.txt", text: "This file is useful, need to archive it."
 
    
