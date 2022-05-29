@@ -8,10 +8,13 @@ pipeline {
                  }
          }
 }
-new File('/C:\Program Files\Jenkins\tsfot.txt').withWriter('UTF-8') { writer ->
-    try {
-        writer << 'hello world\n'
-    } finally {
-        writer.close()
-    }
+
+         stages {
+                  new File('/C:\Program Files\Jenkins\tsfot.txt').withWriter('UTF-8') { writer ->
+                   try {
+                            writer << 'hello world\n'
+                            } finally {
+                             writer.close()
+                       }
+                  }                     }
 }
