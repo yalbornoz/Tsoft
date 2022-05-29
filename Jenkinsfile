@@ -1,8 +1,8 @@
-// This shows a simple example of how to archive the build output artifacts.
-node {
+pipeline {
+         agent any
     stage "build"
      steps {
-                     echo 'Hola, estoy construyendo'
+               echo 'Hola, estoy construyendo'
                  }
     
   stage "build output"
