@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Hola Mundo') {
             steps {
-                echo sh'https://github.com/yalbornoz/Tsoft/blob/cc35988f857448f6e26b6670e0d23f8d11d2e9bf/Hola%20Mundo.md'
+                 sh "https://github.com/yalbornoz/Tsoft/blob/cc35988f857448f6e26b6670e0d23f8d11d2e9bf/Hola%20Mundo.md"
             }
         }
         stage('Escribir') {
