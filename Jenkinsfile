@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Hola Mundo') {
             steps {
-              readFile file "Hola Mundo.md"
+              String content = new File("Hola Mundo,md").text 
                 }
             }
         }
