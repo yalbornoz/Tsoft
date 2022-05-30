@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Hello') {
             steps {
-                readFile file: "Hola Mundo.md"
+                readFile file: "Hola Mundo.txt"
                
             }
         }
