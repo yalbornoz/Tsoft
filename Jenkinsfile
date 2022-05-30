@@ -7,10 +7,10 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Hola Mundo') {
+        stage('Hello') {
             steps {
                 readFile file: "Hola Mundo.md"
-                echo 'Hola Mundo!'
+               
             }
         }
         stage('Escribir') {
