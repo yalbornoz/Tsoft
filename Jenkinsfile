@@ -7,14 +7,14 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Deploy') {
+        stage('Hello') {
             steps {
-                echo 'Ingreso una accion para hacer deploy'
-               
+                echo 'Hola Mundo!'
             }
+        }
         stage('Escribir') {
             steps {
-                writeFile file: "output/usefulfile.txt", text: "This file is useful, archive it."
+                writeFile file: "output/usefulfile.txt", text: "This file is useful, need to archive it."
             }
         }
     }
