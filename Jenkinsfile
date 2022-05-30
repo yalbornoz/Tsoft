@@ -7,9 +7,9 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Hello') {
+        stage('Deploy') {
             steps {
-                readFile file: "Hola Mundo.txt"
+                echo 'Ingreso una accion para hacer deploy'
                
             }
         }
