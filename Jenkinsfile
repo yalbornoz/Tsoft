@@ -9,7 +9,6 @@ pipeline {
         }
         stage('Hola Mundo') {
             steps {
-              String content = new File("Hola Mundo,md").text 
                 echo 'new File'
                 }
             }
